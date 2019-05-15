@@ -29,6 +29,7 @@ spec:
       - name: jenkins-home
         persistentVolumeClaim:
           claimName: jenkins-pvc
+      serviceAccount: "jenkins-admin"
 ---
 apiVersion: v1
 kind: Service
