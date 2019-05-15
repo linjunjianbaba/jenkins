@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: jenkins-pv
+  labels:
+    app: jenkins-pv
+spec:
+  hostPath:
+    path: /data/jenkins
+    type: DirectoryOrCreate
+  accessModes: ["ReadWriteMany","ReadWriteOnce"]
+  capacity:
+    storage: 10G
