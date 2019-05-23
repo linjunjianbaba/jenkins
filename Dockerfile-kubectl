@@ -1,0 +1,10 @@
+#Jenkinsfile private mirror
+FROM alpine
+
+MAINTAINER Linzb "18898879769@163.com"
+
+COPY kubectl /usr/bin/kubectl
+
+WORKDIR /root
+
+CMD ["kubectl"]
