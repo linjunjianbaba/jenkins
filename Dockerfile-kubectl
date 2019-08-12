@@ -3,7 +3,7 @@ FROM alpine
 
 MAINTAINER Linzb "18898879769@163.com"
 
-ENV KUBE_LATEST_VERSION="v1.14.2"
+ENV KUBE_LATEST_VERSION="v1.14.1"
 
 RUN apk add --update ca-certificates \
  && apk add --update -t deps curl \
